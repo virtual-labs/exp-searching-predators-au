@@ -1,13 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Optimal Foraging — Searching Predators (Maximise Energy) — Simulation</title>
+<link rel="stylesheet" href="../assets/css/common.css">
 </head>
 <body>
-		<!-- Your code goes here-->
-
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<div class="card" id="simbox">
+<div class="simbar"><span class="simbar-logo" aria-hidden="true"><img src="../assets/images/logo-amrita.svg" alt="Amrita Vishwa Vidyapeetham"></span><h1 class="simbar-title">Optimal Foraging — Searching Predators (Maximise Energy)</h1><button class="fs-btn" id="fsBtn" onclick="toggleFS()" title="Toggle full screen" aria-label="Toggle full screen">⛶</button></div>
+<div class="sim">
+<div class="controls">
+<label style="font-weight:600;font-size:.9rem;display:block;margin-bottom:6px">Plot</label>
+<select class="dropBox" id="plotMode" onchange="run()">
+  <option value="time">Time per item vs prey-1 abundance</option>
+  <option value="energy">Energy per item vs prey-1 abundance</option>
+  <option value="rate">Energy per time vs prey-1 abundance</option>
+</select>
+<label style="font-weight:600;font-size:.9rem;display:block;margin-bottom:6px">Abundance of prey-2</label>
+<select class="dropBox" id="a2rel" onchange="run()">
+  <option value="0.5">half of prey-1</option>
+  <option value="1" selected>equal to prey-1</option>
+  <option value="2">twice prey-1</option>
+</select>
+<div class="field"><label>Handling time prey-1 hp1 (s) <span class="val" id="v_hp1">6</span></label><input type="range" id="hp1" min="1" max="60" step="1" value="6" oninput="sync()"></div>
+<div class="field"><label>Handling time prey-2 hp2 (s) <span class="val" id="v_hp2">120</span></label><input type="range" id="hp2" min="10" max="300" step="5" value="120" oninput="sync()"></div>
+<div class="field"><label>Energy prey-1 ep1 (kCal) <span class="val" id="v_ep1">150</span></label><input type="range" id="ep1" min="10" max="500" step="10" value="150" oninput="sync()"></div>
+<div class="field"><label>Energy prey-2 ep2 (kCal) <span class="val" id="v_ep2">2000</span></label><input type="range" id="ep2" min="200" max="4000" step="50" value="2000" oninput="sync()"></div>
+<div class="field"><label>Search cost es (kCal/s) <span class="val" id="v_es">1</span></label><input type="range" id="es" min="0.1" max="5" step="0.1" value="1" oninput="sync()"></div>
+<div class="field"><label>Handling cost eh (kCal/s) <span class="val" id="v_eh">5</span></label><input type="range" id="eh" min="0.5" max="20" step="0.5" value="5" oninput="sync()"></div>
+<div class="field"><label>Prey-1 abundance: start <span class="val" id="v_aStart">0.02</span></label><input type="range" id="aStart" min="0.01" max="0.5" step="0.01" value="0.02" oninput="sync()"></div>
+<div class="field"><label>Prey-1 abundance: step <span class="val" id="v_aStep">0.02</span></label><input type="range" id="aStep" min="0.01" max="0.1" step="0.01" value="0.02" oninput="sync()"></div>
+<div class="field"><label>Prey-1 abundance: end <span class="val" id="v_aEnd">1</span></label><input type="range" id="aEnd" min="0.5" max="2" step="0.1" value="1" oninput="sync()"></div>
+<div class="btnrow">
+  <button class="btn btn-primary" onclick="run()">▶ Plot</button>
+  <button class="btn btn-ghost" onclick="resetSim()">↺ Reset</button>
+</div>
+<div class="dl-label">Download</div>
+<div class="btnrow">
+  <button class="btn btn-accent" onclick="downloadPNG('searching-predators.png')">⤓ PNG</button>
+  <button class="btn btn-accent" onclick="downloadCSV()">⤓ CSV</button>
+</div>
+</div>
+<div class="plotwrap">
+<div class="plot-title" id="plotTitle">Time per item vs prey-1 abundance</div>
+<canvas class="chart" id="chart" width="720" height="440"></canvas>
+<div class="legend" id="legend"></div>
+<div class="readout">Cursor: X = <b id="rx">–</b>, Y = <b id="ry">–</b></div>
+<div class="counts" id="counts"></div>
+</div>
+</div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/common.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
