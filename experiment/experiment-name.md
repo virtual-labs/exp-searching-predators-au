@@ -1,1 +1,1 @@
-## Experiment name
+## Optimal Foraging: Searching Predators that Maximize Energy
