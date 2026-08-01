@@ -1,0 +1,75 @@
+
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. When compared with sit-and wait predators, the energetic requirements of searching predators should be:",
+      "answers": {
+        "a": "lower",
+        "b": "higher"
+      },
+ 
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },   
+
+
+    {
+      "question": "2. Which of the following factors have substantial importance in success of widely foraging pattern of searching predators?",
+      "answers": {
+        "a": "searching ability of the predator",
+        "b": "spatial distribution of the prey",
+        "c": "High prey density",
+        "d": "Both a & b"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+
+
+    
+    {
+      "question": "3. How is the search time related to prey abundance?",
+      "answers": {
+        "a": "is directly proportional to prey abundance",
+        "b": "is inversely proportional to prey abundance",
+        "c": "no relation between the two factors",
+        "d": "none of the above"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+
+
+ 
+    {
+      "question": "4. Which among the following describes the optimal foraging strategy of searching predators?",
+      "answers": {
+        "a": "minimizing the foraging time",
+        "b": "maximizing the foraging time",
+        "c": "maximize the energy gain",
+        "d": "minimize the energy gain"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+
+
+
+    {
+      "question": "5. The sit-and-wait foraging pattern is less common during periods of:",
+      "answers": {
+        "a": "prey abundance",
+        "b": "High prey mobility",
+        "c": "Prey scarcity",
+        "d": "All of the above"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}
