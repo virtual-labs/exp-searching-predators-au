@@ -3,41 +3,41 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. ",
+      "question": "1. According to the mathematical model, the search time for a prey is:",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Directly proportional to prey abundance",
+        "b": "Independent of prey abundance",
+        "c": "Inversely proportional to prey abundance",
+        "d": "Equal to the handling time"
       },
  
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },   
 
 
     {
-      "question": "2. :",
+      "question": "2. What is the primary objective of optimal foraging theory?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "To minimize predator movement",
+        "b": "To maximize the net energy gained per unit time",
+        "c": "To maximize prey diversity in the diet",
+        "d": "To reduce prey abundance"
       },
       
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
 
 
     
     {
-      "question": "3.  ",
+      "question": "3. According to the theory, a searching predator differs from a sit-and-wait predator because it:",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Waits at a fixed location for prey to approach",
+        "b": "Moves throughout its habitat to locate prey.",
+        "c": "Hunts only during the night",
+        "d": "Feeds exclusively on immobile prey"
       },
       
       "correctAnswer": "b",
@@ -47,30 +47,30 @@
 
  
     {
-      "question": "4. :",
+      "question": "4. In the simulator, the handling time parameters (hp₁ and hp₂) represent:",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The time required to locate prey",
+        "b": "The reproductive time of the prey population",
+        "c": "The travel time between hunting locations",
+        "d": "The time required to capture and consume the prey"
       },
       
-      "correctAnswer": "b",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
 
 
 
     {
-      "question": "5. ",
+      "question": "5. The overall objective of the searching predator model is to identify the strategy that:",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Minimizes predator movement regardless of energy gain",
+        "b": "Maximizes the number of prey captured per day",
+        "c": "Maximizes net energy gain by balancing prey energy content, search costs, and handling costs",
+        "d": "Eliminates one prey species from the ecosystem"
       },
      
-      "correctAnswer": "b",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     }
   ]
